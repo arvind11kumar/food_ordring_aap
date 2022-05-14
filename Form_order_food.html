@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>page for order food</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .container{
+            background-color: silver;
+            border:1px solid black ;
+            display: flex;
+            justify-content: center;
+        }
+        .contant_of_div{
+            height: 400px;
+            width: 400px;
+            border-radius: 22px;
+            margin-top: 5%;
+            background-color: aquamarine;
+            margin-bottom: 20%;
+            border: 1px solid black;
+        }
+        input[type="text" ]{
+            height:30px ;
+            background-color: aqua;
+            width: 300px;
+            margin-top: 20px;
+            color:green;
+            font-size: 18px;
+            margin-left: 50px;
+        }
+        input[type="number"]{
+            height:30px ;
+            background-color: aqua;
+            width: 300px;
+            color:green;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-left: 50px;
+
+        }
+        .btn_submit{
+            height: 40px;
+            width: 150px;
+            border-radius: 22px;
+            background-color: aqua;
+            color: green;
+            margin-top: 20px;
+            align-self: flex-end;
+        }
+        .btn_flex{
+            display: flex;
+            justify-content: end;
+            margin-right: 40px;
+        }
+        .push_data{
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+    </style>
+    <script src="userdataObject.js">
+       // fetch("./UsingLocalAPI.html").then((e)=>{ console.log(e)}).catch((r)=>{console.log("fail to fatch")})
+      
+    </script>
+</head>
+<body>
+    <h1>enter data for getfood</h1>
+    <div class="container">
+        <div class="contant_of_div">
+            <div><input type="text" placeholder="enter name" required></div>
+            <div><input type="number" placeholder="number" required></div>
+            <div><input type="text" placeholder="address" required></div>
+            <div class="btn_flex">
+            <div><button class="btn_submit">submit</button></div></div>
+            
+            <div class="push_data">
+
+            </div>
+
+        </div>
+    </div>
+    <script>
+        let btn_submit=document.querySelector(".btn_submit");
+        let push_data=document.querySelector(".push_data");
+        let createh1_susses=document.createElement("h1");
+        createh1_susses.innerHTML="you book your food ";  
+        console.table(user.newuserdata)
+        btn_submit.addEventListener("click",function(){
+            push_data.appendChild(createh1_susses);
+
+            
+        })
+    </script>
+    
+
+
+</body>
+</html>
